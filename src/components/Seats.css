@@ -1,0 +1,36 @@
+.seats {
+  perspective: 1000px;
+}
+.screen {
+  width: 80%;
+  height: 5rem;
+  background: whitesmoke;
+  margin: 1rem auto 3rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(255, 255, 255, 0.8);
+  transform: rotateX(-45deg);
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.row .seat:nth-of-type(2) {
+  margin-right: 2rem;
+}
+
+.row .seat:nth-last-of-type(2) {
+  margin-left: 2rem;
+}
+
+.row .seat:not(.occupied) {
+  cursor: pointer;
+  transition: var(--transition);
+}
+.row .seat:not(.occupied):hover {
+  transform: scale(1.2);
+}
+.row .seat.occupied {
+  cursor: not-allowed;
+}

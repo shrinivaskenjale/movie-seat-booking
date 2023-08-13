@@ -1,0 +1,26 @@
+.seat {
+  background: lightgray;
+  width: 1.2rem;
+  height: 1rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.showcase {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.seat.selected {
+  background: rgb(86, 168, 219);
+}
+
+.seat.occupied {
+  background: red;
+}
